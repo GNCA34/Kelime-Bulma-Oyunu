@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="728dp"
+        android:layout_height="785dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/holo_purple"
+        />
+
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-30dp">
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@id/selected_letter"
+        android:layout_width="614dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="188dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="32sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/table_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="160dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/kontrol"
+        android:drawablePadding="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="149dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/carpi"
+        />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        />
+
+
+
+
+</RelativeLayout>
